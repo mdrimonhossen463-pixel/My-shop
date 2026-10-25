@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rimon Super Shop - Best Price in Khulna</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+body{background:#f7f7f7}
+.top{background:linear-gradient(90deg,#ff6a00,#ff2a00);color:#fff;padding:14px;text-align:center;font-weight:900;font-size:20px;position:sticky;top:0;z-index:99}
+.banner{background:white;margin:10px;border-radius:15px;padding:15px;text-align:center}
+.banner h2{color:#ff6a00}
+.products{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px}
+.card{background:white;border-radius:15px;padding:10px;box-shadow:0 4px 10px #0001;text-align:center}
+.card img{width:100%;height:130px;object-fit:cover;border-radius:10px}
+.card h3{font-size:14px;margin:8px 0}
+.price{color:#ff2a00;font-weight:bold;font-size:18px}
+.old{color:gray;font-size:12px;text-decoration:line-through}
+.btn{margin-top:8px;background:#111;color:white;border:none;width:100%;padding:10px;border-radius:25px;font-weight:bold}
+.btn2{background:#25D366}
+.footer{padding:20px;text-align:center;color:gray;font-size:12px;padding-bottom:80px}
+.cart-bar{position:fixed;bottom:0;left:0;right:0;background:white;border-top:2px solid #ff6a00;padding:10px;display:flex;justify-content:space-between;align-items:center}
+.cart-bar button{background:#ff6a00;color:white;border:none;padding:12px 20px;border-radius:25px;font-weight:bold;width:100%}
+</style>
+</head>
+<body>
+<div class="top">🛒 RIMON SHOP - খুলনা</div>
+<div class="banner">
+<h2>🔥 আজকের অফার - 50% ছাড়!</h2>
+<p>খুলনা সিটিতে ফ্রি হোম ডেলিভারি</p>
+</div>
+
+<div class="products">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+<h3>প্রিমিয়াম স্মার্ট ওয়াচ</h3>
+<div class="old">৳ 2500</div><div class="price">৳ 1250</div>
+<button class="btn" onclick="order('স্মার্ট ওয়াচ 1250টাকা')">অর্ডার করুন</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+<h3>স্টাইলিশ জুতা</h3>
+<div class="old">৳ 3200</div><div class="price">৳ 1850</div>
+<button class="btn" onclick="order('জুতা 1850টাকা')">অর্ডার করুন</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+<h3>প্রিমিয়াম টি-শার্ট</h3>
+<div class="old">৳ 900</div><div class="price">৳ 550</div>
+<button class="btn" onclick="order('টি-শার্ট 550টাকা')">অর্ডার করুন</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e">
+<h3>ব্লুটুথ হেডফোন</h3>
+<div class="old">৳ 1500</div><div class="price">৳ 850</div>
+<button class="btn" onclick="order('হেডফোন 850টাকা')">অর্ডার করুন</button>
+</div>
+</div>
+
+<div class="footer">
+Rimon Shop<br>ঠিকানা: খুলনা, বাংলাদেশ<br>ফোন: 019XXXXXXXX
+</div>
+
+<div class="cart-bar">
+<button onclick="order('হ্যালো, আমি আপনাদের শপ থেকে অর্ডার করতে চাই')">📲 WhatsApp এ মেসেজ করুন</button>
+</div>
+
+<script>
+function order(name){
+let num="8801XXXXXXXXX"; // এখানে তোমার নাম্বার দেবে 880 দিয়ে
+let url="https://wa.me/"+num+"?text=আসসালামু আলাইকুম, আমি "+name+" অর্ডার করতে চাই। খুলনা থেকে বলছি।";
+window.open(url,"_blank");
+}
+</script>
+</body>
+</html>
